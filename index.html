@@ -1,58 +1,947 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Agriculture for Better life:: Faculty of Agriculture</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
 
-<body>
-    <script src="./main.js"></script>
+  <body>
     <!-- TODO : NAVBAR -->
+    <!-- !If Navbar window width < 900 will be not responsive -->
     <nav>
-        <ul class="ul-nav">
-            <li><a href="#0">Home</a></li>
-            <li><a href="#0">About</a></li>
-            <li>
-                <a href="#0">Clients</a>
-                <ul>
-                    <li><a href="#0">Burger King</a></li>
-                    <li><a href="#0">Southwest Airlines</a></li>
-                    <li><a href="#0">Levi Strauss</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#0">Services</a>
-                <ul>
-                    <li><a href="#0">Print Design</a></li>
-                    <li><a href="#0">Web Design</a></li>
-                    <li><a href="#0">Mobile App Development</a></li>
-                </ul>
-            </li>
-            <li><a href="#0">Contact</a></li>
-        </ul>
+      <ul class="ul-nav">
+        <li><a href="#0">HOME</a></li>
+        <li><a href="#0">CURRICULUM</a></li>
+        <li><a href="#0">ADVISOR</a></li>
+        <li>
+          <a href="#0">SERVICE</a>
+          <ul>
+            <li><a href="#0">การรายงานตัวขึ้นทะเบียนเป็นนักศึกษาใหม่</a></li>
+            <li><a href="#0">การลงทะเบียนเรียน (ผ่านระบบออนไลน์)</a></li>
+            <li><a href="#0">ข้อบังคับ /ประกาศ /แนวปฏิบัติ </a></li>
+            <li><a href="#0">คู่มือนักศึกษา</a></li>
+            <li><a href="#0">ปฏิทินการศึกษา</a></li>
+            <li><a href="#0">ระบบงานทะเบียนการศึกษา</a></li>
+            <li><a href="#0">แนะนำระบบสารสนเทศการศึกษา คณะเกษตรศาสตร์</a></li>
+            <li><a href="#0">แผนผังคณะเกษตรศาสตร์ มหาวิทยาลัยเชียงใหม่</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#0">DEVELOPMENT</a>
+          <ul>
+            <li><a href="#0">สิทธิและสวัสดิการนักศึกษา</a></li>
+            <li><a href="#0">ทุนการศึกษา</a></li>
+            <li><a href="#0">การกู้ยืมเงินให้กู้ยืมเพื่อการศึกษา</a></li>
+            <li><a href="#0">สโมสรนักศึกษา</a></li>
+            <li><a href="#0">วินัยนักศึกษาวินัยนักศึกษา </a></li>
+            <li><a href="#0">ชุดเครื่องแบบนักศึกษา</a></li>
+            <li><a href="#0">การรับสมัครเข้าหอพักนักศึกษา </a></li>
+          </ul>
+        </li>
+        <li><a href="#0">CONTACT</a></li>
+      </ul>
     </nav>
-    <!-- TODO : CURRICULUM -->
-    <!-- TODO : ADVISOR , Video Suggestion -->
-    <!-- TODO : EDUCATION SERVICE -->
-    <!-- TODO : STUDENT DEVELOPMENT -->
+
+    <header class="header">
+      <!-- <div class="brand-box">
+        <span class="brand">Faculty of Agriculture</span>
+      </div> -->
+
+      <div class="text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary-main">CMU 1st Year Student</span>
+          <span class="heading-primary-sub"
+            >Welcome to Faculty of Agriculture</span
+          >
+        </h1>
+        <a href="#" class="btn-header btn-white-header btn-animated"
+          >Discover our tours</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- TODO : CURRICULUM -->
+      <div class="container my-5">
+        <h4 class="subHeader-text">โครงสร้างหลักสูตรระดับปริญญาตรี</h4>
+        <h2 class="header-text">CURRICULUM</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 my-5">
+            <div data-aos="fade-down">
+              <div class="center-div">
+                <a
+                  href="https://www.agri.cmu.ac.th/2017/files/AgriPersonal/433/%E0%B8%A7%E0%B8%97.%E0%B8%9A.%20%E0%B9%80%E0%B8%A8%E0%B8%A3%E0%B8%A9%E0%B8%90%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%81%E0%B8%A9%E0%B8%95%E0%B8%A3%202564%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%A2%E0%B9%88%E0%B8%AD%20-%20%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%97%E0%B8%A8%20AEC.pdf"
+                  class="button button--anthe"
+                >
+                  <span class="thaifont">สาขาวิชาเศรษฐศาสตร์เกษตร</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 my-5">
+            <div data-aos="fade-down">
+              <div class="center-div">
+                <a
+                  href="https://www.agri.cmu.ac.th/smart_academic/files/%E0%B8%A7%E0%B8%97.%E0%B8%9A.%20%E0%B9%80%E0%B8%81%E0%B8%A9%E0%B8%95%E0%B8%A3%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C%202561%20%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%A2%E0%B9%88%E0%B8%AD%20-%20%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%97%E0%B8%A8.pdf"
+                  class="button button--anthe"
+                >
+                  <span class="thaifont">สาขาวิชาเกษตรศาสตร์</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TODO : ADVISOR , Video Suggestion -->
+      <div class="container my-5">
+        <h4 class="subHeader-text">
+          รายชื่ออาจารย์ที่ปรึกษาประจำปีการศึกษา 2564
+        </h4>
+        <h2 class="header-text">ADISOR</h2>
+        <div class="row my-5">
+          <div class="col-12 my-2">
+            <div data-aos="fade-down">
+              <p class="desc">
+                นักศึกษาสามารถดูช่องทางการติดต่อของอาจารย์ที่ปรึกษาโดยแสดงเป็นรายบุคคล
+              </p>
+              <button class="button-sm button--mimas">
+                <a
+                  style="color: white"
+                  href="https://oauth.cmu.ac.th/v1/Login.aspx?continue=agri%20SMART%20STUDENT"
+                >
+                  <span>Login CMU Account</span></a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="col-12 my-2">
+            <div data-aos="fade-down">
+              <button class="button-sm button--pandora">
+                <a
+                  style="color: black"
+                  href="https://www.agri.cmu.ac.th/smart_academic/files/196-2564%20%E0%B8%AD%E0%B8%B2%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%A3%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%8A%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B8%9B%E0%B8%B5%E0%B8%97%E0%B8%B5%E0%B9%88%201%20%E0%B8%A8%E0%B8%A8.pdf"
+                >
+                  <span
+                    >คำสั่งแต่งตั้งอาจารย์ที่ปรึกษานักศึกษาคณะเกษตรศาสตร์
+                    สาขาวิชาเศรษฐศาสตร์เกษตร ประจำปีการศึกษา 2564</span
+                  ></a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="col-12 my-2">
+            <div data-aos="fade-down">
+              <button class="button-sm button--pandora">
+                <a
+                  style="color: black"
+                  href="https://www.agri.cmu.ac.th/smart_academic/files/197-2564%20%E0%B8%AD%E0%B8%B2%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%A3%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%8A%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B8%9B%E0%B8%B5%E0%B8%97%E0%B8%B5%E0%B9%881%20%E0%B9%80%E0%B8%81%E0%B8%A9%E0%B8%95%E0%B8%A3%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C.pdf"
+                >
+                  <span
+                    >คำสั่งแต่งตั้งอาจารย์ที่ปรึกษานักศึกษาคณะเกษตรศาสตร์
+                    สาขาวิชาเกษตรศาสตร์ ประจำปีการศึกษา 2564</span
+                  ></a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="svg-container">
+        <svg
+          id="visual"
+          viewBox="0 0 1920 300"
+          width="1920"
+          height="300"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+        >
+          <path
+            d="M0 67L175 67L175 22L349 22L349 43L524 43L524 58L698 58L698 61L873 61L873 40L1047 40L1047 40L1222 40L1222 25L1396 25L1396 58L1571 58L1571 34L1745 34L1745 58L1920 58L1920 49L1920 0L1920 0L1745 0L1745 0L1571 0L1571 0L1396 0L1396 0L1222 0L1222 0L1047 0L1047 0L873 0L873 0L698 0L698 0L524 0L524 0L349 0L349 0L175 0L175 0L0 0Z"
+            fill="#ffffff"
+          ></path>
+          <path
+            d="M0 187L175 187L175 142L349 142L349 106L524 106L524 172L698 172L698 160L873 160L873 94L1047 94L1047 127L1222 127L1222 88L1396 88L1396 139L1571 139L1571 106L1745 106L1745 109L1920 109L1920 94L1920 47L1920 56L1745 56L1745 32L1571 32L1571 56L1396 56L1396 23L1222 23L1222 38L1047 38L1047 38L873 38L873 59L698 59L698 56L524 56L524 41L349 41L349 20L175 20L175 65L0 65Z"
+            fill="#d1c0da"
+          ></path>
+          <path
+            d="M0 250L175 250L175 238L349 238L349 229L524 229L524 232L698 232L698 250L873 250L873 196L1047 196L1047 184L1222 184L1222 217L1396 217L1396 202L1571 202L1571 208L1745 208L1745 181L1920 181L1920 208L1920 92L1920 107L1745 107L1745 104L1571 104L1571 137L1396 137L1396 86L1222 86L1222 125L1047 125L1047 92L873 92L873 158L698 158L698 170L524 170L524 104L349 104L349 140L175 140L175 185L0 185Z"
+            fill="#a384b5"
+          ></path>
+          <path
+            d="M0 274L175 274L175 262L349 262L349 259L524 259L524 265L698 265L698 277L873 277L873 214L1047 214L1047 229L1222 229L1222 265L1396 265L1396 220L1571 220L1571 253L1745 253L1745 232L1920 232L1920 238L1920 206L1920 179L1745 179L1745 206L1571 206L1571 200L1396 200L1396 215L1222 215L1222 182L1047 182L1047 194L873 194L873 248L698 248L698 230L524 230L524 227L349 227L349 236L175 236L175 248L0 248Z"
+            fill="#764a91"
+          ></path>
+          <path
+            d="M0 301L175 301L175 301L349 301L349 301L524 301L524 301L698 301L698 301L873 301L873 301L1047 301L1047 301L1222 301L1222 301L1396 301L1396 301L1571 301L1571 301L1745 301L1745 301L1920 301L1920 301L1920 236L1920 230L1745 230L1745 251L1571 251L1571 218L1396 218L1396 263L1222 263L1222 227L1047 227L1047 212L873 212L873 275L698 275L698 263L524 263L524 257L349 257L349 260L175 260L175 272L0 272Z"
+            fill="#470d6d"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="container-fulid pp-theme">
+        <div class="container">
+          <table class="table table-bordered color-table">
+            <thead>
+              <tr>
+                <th colspan="3">&emsp;สาขาวิชาเศรษฐศาสตร์เกษตร</th>
+              </tr>
+              <tr>
+                <th>ลำดับที่</th>
+                <th>รายชื่ออาจารย์ที่ปรึกษา</th>
+                <th>รหัสประจำตัวนักศึกษา (640810xxx)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <th>รศ.ดร.เยาวเรศ เชาวนพูนผล</th>
+                <th>001 - 008</th>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <th>ผศ.ดร.จิรวรรณ กิจชัยเจริญ</th>
+                <th>009 - 016</th>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <th>ผศ.ดร.พรสิริ สืบพงษ์สังข์</th>
+                <th>017 - 024</th>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <th>ผศ.ดร.กรรณิกา แซ่ลิ่ว</th>
+                <th>025 - 032</th>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <th>ผศ.ดร.ประทานทิพย์ กระมล</th>
+                <th>033 - 040</th>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <th>ผศ.ดร.อนุพงศ์ วงศ์ไชย</th>
+                <th>041 - 048</th>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <th>อ.ดร.กฤษฎา ดิเรกวัฒนะ</th>
+                <th>049 - 056</th>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <th>อ.ดร.จิตติมา สิงห์เวชสกุล</th>
+                <th>057 - 064</th>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <th>อ.ดร.ชนามาศ อินต๊ะปัน</th>
+                <th>065 - 072</th>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <th>อ.วิริยาภรณ์ วงศ์กัทลีคาม</th>
+                <th>073 - 080</th>
+              </tr>
+            </tbody>
+          </table>
+          <!-- สาขาวิชาสัตวศาสตร์และสัตว์น้ำ -->
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th colspan="3">&emsp;สาขาวิชาเกษตรศาสตร์</th>
+              </tr>
+              <tr>
+                <th>ลำดับที่</th>
+                <th>รายชื่ออาจารย์ที่ปรึกษา</th>
+                <th>รหัสประจำตัวนักศึกษา (640810xxx)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <th>รศ.ดร.จิราพร กุลสาริน (สาขาวิชากีฏวิทยา)</th>
+                <th>081 - 090</th>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <th>ผศ.ดร.ปิยะวรรณ สุทธิประพันธ์ (สาขาวิชากีฏวิทยา)</th>
+                <th>091 - 100</th>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <th>อ.ดร.บาจรีย์ ฉัตรทอง (สาขาวิชากีฏวิทยา)</th>
+                <th>101 - 110</th>
+              </tr>
+
+              <tr>
+                <th scope="row">4</th>
+                <th>รศ.ดร.เกวลิน คุณาศักดากุล (สาขาวิชาโรคพืช)</th>
+                <th>111 - 120</th>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <th>ผศ.ดร.อังสนา อัครพิศาล (สาขาวิชาโรคพืช)</th>
+                <th>121 - 130</th>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <th>ผศ.ดร.รัชดาวรรณ ชีวังกูร (สาขาวิชาโรคพืช)</th>
+                <th>131 - 140</th>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <th>ผศ. พรสุข ชัยสุข (สาขาวิชาโรคพืช)</th>
+                <th>141 - 150</th>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <th>ผศ.ดร.สงวนศักดิ์ ธนาพรพูนพงษ์ (สาขาวิชาพืชไร่)</th>
+                <th>151 - 160</th>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <th>ผศ.ดร.ต่อนภา ผุสดี (สาขาวิชาพืชไร่)</th>
+                <th>161 - 170</th>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <th>อ.ดร.ภารดี ธรรมาภิชัย (สาขาวิชาพืชไร่)</th>
+                <th>171 - 180</th>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <th>ผศ.ดร.ศิวาพร ธรรมดี (สาขาวิชาพืชสวน)</th>
+                <th>181 - 190</th>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <th>ผศ.ดร.ฉันทลักษณ์ ติยายน (สาขาวิชาพืชสวน)</th>
+                <th>191 - 200</th>
+              </tr>
+              <tr>
+                <th scope="row">13</th>
+                <th>ผศ.ดร.พิมพ์ใจ สีหะนาม (สาขาวิชาพืชสวน)</th>
+                <th>201 - 210</th>
+              </tr>
+              <tr>
+                <th scope="row">14</th>
+                <th>ผศ.ดร.จุฑามาส คุ้มชัย (สาขาวิชาพืชสวน)</th>
+                <th>211 - 220</th>
+              </tr>
+              <tr>
+                <th scope="row">15</th>
+                <th>ผศ.ดร.พงศกร ศุภกิจไพศาล (สาขาวิชาพืชสวน)</th>
+                <th>221 - 230</th>
+              </tr>
+              <tr>
+                <th scope="row">16</th>
+                <th>อ.ดร.ยุพา จอมแก้ว (สาขาวิชาปฐพีศาสตร์)</th>
+                <th>231 - 240</th>
+              </tr>
+              <tr>
+                <th scope="row">17</th>
+                <th>อ.ดร.เทวินทร์ แก้วมูลเมือง (สาขาวิชาปฐพีศาสตร์)</th>
+                <th>241 - 249</th>
+              </tr>
+              <tr>
+                <th scope="row">18</th>
+                <th>
+                  ผศ.ดร.บุศรา ลิ้มนิรันดร์กุล
+                  (สาขาวิชาส่งเสริมและเผยแพร่การเกษตร )
+                </th>
+                <th>250 - 258</th>
+              </tr>
+              <tr>
+                <th scope="row">19</th>
+                <th>
+                  ผศ.ดร.จุฑาทิพย์ เฉลิมผล (สาขาวิชาส่งเสริมและเผยแพร่การเกษตร )
+                </th>
+                <th>259 - 267</th>
+              </tr>
+              <tr>
+                <th scope="row">20</th>
+                <th>
+                  ผศ.ดร.ณฐิตากานต์ พยัคฆา (สาขาวิชาส่งเสริมและเผยแพร่การเกษตร )
+                </th>
+                <th>268 - 276</th>
+              </tr>
+              <tr>
+                <th scope="row">21</th>
+                <th>อ.ดร.วัชรพงศ์ นรพัลลภ (สาขาวิชาสัตวศาสตร์และสัตว์น้ำ)</th>
+                <th>277 - 285</th>
+              </tr>
+              <tr>
+                <th scope="row">22</th>
+                <th>อ.ดร.ทฤษฎี คำหล่อ (สาขาวิชาสัตวศาสตร์และสัตว์น้ำ)</th>
+                <th>286 - 294</th>
+              </tr>
+              <tr>
+                <th scope="row">23</th>
+                <th>อ.ดร.ชมพูนุช หลำแสงกุล (สาขาวิชาสัตวศาสตร์และสัตว์น้ำ)</th>
+                <th>295 - 303</th>
+              </tr>
+              <tr>
+                <th scope="row">24</th>
+                <th>อ.ดร.ศิริพร โทลา (สาขาวิชาสัตวศาสตร์และสัตว์น้ำ)</th>
+                <th>304 - 312</th>
+              </tr>
+              <tr>
+                <th scope="row">25</th>
+                <th>
+                  ผศ.ธีระพงษ์ เสาวภาคย์ (สาขาวิชาเกษตรที่สูงและทรัพยากรธรรมชาติ)
+                </th>
+                <th>313 - 321</th>
+              </tr>
+              <tr>
+                <th scope="row">26</th>
+                <th>
+                  อ.ดร.สุรีรัตน์ ลัคนาวิเชียร
+                  (สาขาวิชาเกษตรที่สูงและทรัพยากรธรรมชาติ)
+                </th>
+                <th>322 - 330</th>
+              </tr>
+              <tr>
+                <th scope="row">27</th>
+                <th>
+                  ผศ.ดร.นริศ ยิ้มแย้ม (สาขาวิชาเกษตรที่สูงและทรัพยากรธรรมชาติ)
+                </th>
+                <th>331 - 339</th>
+              </tr>
+              <tr>
+                <th scope="row">28</th>
+                <th>
+                  อ.ดร.มนตรี แสนวังสี (สาขาวิชาเกษตรที่สูงและทรัพยากรธรรมชาติ)
+                </th>
+                <th>340 - 348</th>
+              </tr>
+              <tr>
+                <th scope="row">29</th>
+                <th>
+                  อ.ดร.ปณิดา กาจีนะ (สาขาวิชาเกษตรที่สูงและทรัพยากรธรรมชาติ)
+                </th>
+                <th>349 - 357</th>
+              </tr>
+            </tbody>
+          </table>
+          <p class="pull-right">อัพเดตข้อมูล ณ วันที่ 10 มิ.ย.2564</p>
+        </div>
+      </div>
+      <div class="svg-container">
+        <svg
+          id="visual"
+          viewBox="0 0 1920 450"
+          width="1920"
+          height="450"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+        >
+          <path
+            d="M0 105L128 105L128 82L256 82L256 60L384 60L384 91L512 91L512 87L640 87L640 172L768 172L768 64L896 64L896 96L1024 96L1024 55L1152 55L1152 91L1280 91L1280 172L1408 172L1408 118L1536 118L1536 145L1664 145L1664 51L1792 51L1792 64L1920 64L1920 123L1920 0L1920 0L1792 0L1792 0L1664 0L1664 0L1536 0L1536 0L1408 0L1408 0L1280 0L1280 0L1152 0L1152 0L1024 0L1024 0L896 0L896 0L768 0L768 0L640 0L640 0L512 0L512 0L384 0L384 0L256 0L256 0L128 0L128 0L0 0Z"
+            fill="#470d6d"
+          ></path>
+          <path
+            d="M0 141L128 141L128 127L256 127L256 82L384 82L384 118L512 118L512 168L640 168L640 244L768 244L768 136L896 136L896 154L1024 154L1024 132L1152 132L1152 136L1280 136L1280 208L1408 208L1408 163L1536 163L1536 208L1664 208L1664 82L1792 82L1792 145L1920 145L1920 150L1920 121L1920 62L1792 62L1792 49L1664 49L1664 143L1536 143L1536 116L1408 116L1408 170L1280 170L1280 89L1152 89L1152 53L1024 53L1024 94L896 94L896 62L768 62L768 170L640 170L640 85L512 85L512 89L384 89L384 58L256 58L256 80L128 80L128 103L0 103Z"
+            fill="#764a91"
+          ></path>
+          <path
+            d="M0 258L128 258L128 235L256 235L256 208L384 208L384 195L512 195L512 208L640 208L640 294L768 294L768 163L896 163L896 222L1024 222L1024 249L1152 249L1152 235L1280 235L1280 339L1408 339L1408 285L1536 285L1536 316L1664 316L1664 172L1792 172L1792 262L1920 262L1920 222L1920 148L1920 143L1792 143L1792 80L1664 80L1664 206L1536 206L1536 161L1408 161L1408 206L1280 206L1280 134L1152 134L1152 130L1024 130L1024 152L896 152L896 134L768 134L768 242L640 242L640 166L512 166L512 116L384 116L384 80L256 80L256 125L128 125L128 139L0 139Z"
+            fill="#a384b5"
+          ></path>
+          <path
+            d="M0 352L128 352L128 325L256 325L256 249L384 249L384 285L512 285L512 258L640 258L640 343L768 343L768 244L896 244L896 316L1024 316L1024 312L1152 312L1152 316L1280 316L1280 379L1408 379L1408 339L1536 339L1536 402L1664 402L1664 271L1792 271L1792 303L1920 303L1920 307L1920 220L1920 260L1792 260L1792 170L1664 170L1664 314L1536 314L1536 283L1408 283L1408 337L1280 337L1280 233L1152 233L1152 247L1024 247L1024 220L896 220L896 161L768 161L768 292L640 292L640 206L512 206L512 193L384 193L384 206L256 206L256 233L128 233L128 256L0 256Z"
+            fill="#d1c0da"
+          ></path>
+          <path
+            d="M0 451L128 451L128 451L256 451L256 451L384 451L384 451L512 451L512 451L640 451L640 451L768 451L768 451L896 451L896 451L1024 451L1024 451L1152 451L1152 451L1280 451L1280 451L1408 451L1408 451L1536 451L1536 451L1664 451L1664 451L1792 451L1792 451L1920 451L1920 451L1920 305L1920 301L1792 301L1792 269L1664 269L1664 400L1536 400L1536 337L1408 337L1408 377L1280 377L1280 314L1152 314L1152 310L1024 310L1024 314L896 314L896 242L768 242L768 341L640 341L640 256L512 256L512 283L384 283L384 247L256 247L256 323L128 323L128 350L0 350Z"
+            fill="#ffffff"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- TODO : EDUCATION SERVICE -->
+      <div class="container-fulid">
+        <div class="container my-5">
+          <h4 class="subHeader-text">บริการการศึกษา</h4>
+          <h2 class="header-text">EDUCATION SERVICE</h2>
+          <!-- <div class="row">
+          <div class="col-sm-6 col-lg-3"></div>
+        </div> -->
+        </div>
+        <ul class="edu-selecte-ul">
+          <li class="edu-se-li">การรายงานตัวขึ้นทะเบียนเป็นนักศึกษาใหม่</li>
+          <hr
+            style="height: 30px; width: 1px; display: flex; align-items: center"
+          />
+          <li class="edu-se-li">การลงทะเบียนเรียน (ผ่านระบบออนไลน์)</li>
+          <hr
+            style="height: 30px; width: 1px; display: flex; align-items: center"
+          />
+          <li class="edu-se-li">ข้อบังคับ/ประกาศ/แนวปฏิบัติ</li>
+          <hr
+            style="height: 30px; width: 1px; display: flex; align-items: center"
+          />
+          <li class="edu-se-li">คู่มือนักศึกษา</li>
+          <hr
+            style="height: 30px; width: 1px; display: flex; align-items: center"
+          />
+          <li class="edu-se-li">ปฏิทินการศึกษา</li>
+          <hr
+            style="height: 30px; width: 1px; display: flex; align-items: center"
+          />
+          <li class="edu-se-li">ระบบงานทะเบียนการศึกษา</li>
+          <hr
+            style="height: 30px; width: 1px; display: flex; align-items: center"
+          />
+          <li class="edu-se-li">แนะนำระบบสารสนเทศการศึกษา</li>
+          <hr
+            style="height: 30px; width: 1px; display: flex; align-items: center"
+          />
+          <li class="edu-se-li">แผนผังคณะเกษตรศาสตร์</li>
+        </ul>
+        <div class="container my-5">
+          <div class="box-content" data-aos="fade-up">
+            <h2 class="header-text mt-3 thaifont">
+              การรายงานตัวขึ้นทะเบียนเป็นนักศึกษาใหม่
+            </h2>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-6 mb-4 center-ver">
+                <img
+                  class="responesive-img center-div"
+                  src="./img/รายงานตัว.jpg"
+                  alt="รายงานตัว"
+                />
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <p class="thaifont indent-text">
+                  การรายงานตัวขึ้นทะเบียนเป็นนักศึกษาเป็นกระบวนการที่ผู้มีสิทธิ์เข้าศึกษานำส่งเอกสารตามที่กำหนด
+                  ให้กับมหาวิทยาลัยเชียงใหม่ซึ่งสำนักทะเบียนและประมวลผลรจะรับรายงานตัวเพื่อขึ้นทะเบียนเป็นนักศึกษามหาวิทยาลัยเชียงใหม่ปีการศึกษา
+                  2564
+                  ผ่านระบบออนไลน์ดังนั้นจึงให้ผู้มีสิทธิ์รายงานตัวขึ้นทะเบียนเป็นนักศึกษามหาวิทยาลัยเชียงใหม่ทราบและถือปฏิบัติ
+                </p>
+                <hr style="width: 100%" />
+                <p class="thaifont indent-text">
+                  นักศึกษาใหม่ระดับปริญญาตรี
+                  จะต้องรายงานตัวขึ้นทะเบียนเป็นนักศึกษาใหม่
+                  และดำเนินการส่งเอกสารการรายงานตัวให้ครบถ้วน
+                  ตามประกาศและระเบียบมหาวิทยาลัยเชียงใหม่
+                  จึงจะถือว่าการรายงานตัวเป็นนักศึกษานั้นสมบูรณ์
+                </p>
+                <br />
+                <p class="thaifont indent-text">
+                  สำหรับผู้ที่ไม่ไปรายงานตัวขึ้นทะเบียนเป็นนักศึกษาภายใน 10
+                  วันทำการ นับจากวันที่กำหนดให้รายงานตัวขึ้นทะเบียนเป็นนักศึกษา
+                  จะถือว่าสละสิทธิ์การเข้าเป็นนักศึกษามหาวิทยาลัยเชียงใหม่
+                </p>
+                <a
+                  class="thaifont"
+                  href="https://www.agri.cmu.ac.th/smart_academic/files/%E0%B8%82%E0%B8%B6%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%9A%E0%B8%B5%E0%B8%A2%E0%B8%99%20%E0%B8%9B%20%E0%B8%95%E0%B8%A3%E0%B8%B564.pdf"
+                  >ขั้นตอนการรายงานตัวขึ้นทะเบียนเป็นนักศึกษาระดับปริญญาตรี
+                  มหาวิทยาลัยเชียงใหม่ ประจำปีการศึกษา 2564</a
+                >
+                <p class="thaifont indent-text">
+                  ทั้งนี้นักศึกษาใหม่ ระดับปริญญาตรี
+                  สามารถศึกษาข้อมูลเกี่ยวกับการรายงานตัวขึ้นทะเบียนเป็นนักศึกษาเพิ่มเติมได้ที่
+                </p>
+                <a
+                  class="btn btn-primary my-1 thaifont"
+                  href="https://www3.reg.cmu.ac.th/stdinfo/undergraduate/"
+                >
+                  ศึกษาเพิ่มเติม</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="box-content" data-aos="fade-up">
+            <h2 class="header-text mt-3 thaifont">
+              การลงทะเบียนเรียน (ผ่านระบบออนไลน์)
+            </h2>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-6 mb-4 center-ver">
+                <img
+                  class="responesive-img center-div"
+                  src="./img/หากระบวนวิชา.jpg"
+                  alt="รายงานตัว"
+                />
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <p class="thaifont indent-text">
+                  สำหรับนักศึกษาใหม่ ชั้นปีที่ 1 จะต้องลงทะเบียนเรียนแบบ
+                  (ตารางสำเร็จรูป package) ผ่านระบบออนไลน์
+                  ของสำนักทะเบียนและประมวลผล ตามกำหนดการในปฏิทินการศึกษา
+                  ประจำปีการศึกษา ภาค 1/2564
+                  และชำระค่าธรรมเนียมการศึกษาให้เรียบร้อย
+                  จึงจะถือว่าการลงทะเบียนนั้นสมบูรณ์
+                  ทั้งนี้นักศึกษาสามารถเข้าศึกษาแยกตามหัวข้อได้ดังนี้
+                </p>
+                <ul>
+                  <li>
+                    <p class="thaifont">ค้นหากระบวนวิชาที่เปิดสอนได้ที่</p>
+                    <a
+                      class="btn btn-primary my-1 thaifont"
+                      href="https://www1.reg.cmu.ac.th/registrationoffice/searchcourse.php"
+                    >
+                      Searchcourse</a
+                    >
+                  </li>
+                  <li>
+                    <p class="thaifont">เข้าระบบเพื่อลงทะเบียนออนไลน์ ได้ที่</p>
+                    <a
+                      class="btn btn-primary my-1 thaifont"
+                      href="https://www.reg.cmu.ac.th/webreg/th/undergraduate/"
+                    >
+                      เข้าสู่ระบบ</a
+                    >
+                  </li>
+                  <li>
+                    <p class="thaifont">
+                      ดูรายละเอียดกระบวนวิชา (Courses Bulletin) ได้ที่
+                    </p>
+                    <a
+                      class="btn btn-primary my-1 thaifont"
+                      href="https://mis.cmu.ac.th/tqf/coursepublic.aspx"
+                    >
+                      ดูรายละเอียดกระบวนวิชา</a
+                    >
+                  </li>
+                  <li>
+                    <p class="thaifont">คู่มือการลงทะเบียนกระบวนวิชา ได้ที่</p>
+                    <a
+                      class="btn btn-primary my-1 thaifont"
+                      href="https://www1.reg.cmu.ac.th/reg-ebook/views/index.php?v=2"
+                    >
+                      Click</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-content" data-aos="fade-up">
+            <h2 class="header-text mt-3 thaifont">
+              ข้อบังคับ /ประกาศ /แนวปฏิบัติ
+            </h2>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-6 mb-4 center-ver">
+                <img
+                  class="responesive-img center-div"
+                  src="./img/3.jpg"
+                  alt="รายงานตัว"
+                />
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <p class="thaifont indent-text">
+                  ข้อมูลเกี่ยวกับ ข้อบังคับ /ประกาศ /แนวปฏิบัติ /
+                  เป็นสิ่งที่นักศึกษาใหม่ต้องศึกษา
+                  และทำความเข้าใจตลอดระยะเวลาการศึกษา
+                  เพื่อเป็นประโยชน์แก่ตัวนักศึกษา ซึ่งหัวข้อที่นักศึกษาควรทราบ
+                  มีดังนี้
+                </p>
+                <ul>
+                  <li>
+                    <p class="thaifont">
+                      ประกาศ/ข้อบังคับ มหาวิทยาลัยเชียงใหม่
+                    </p>
+                    <a
+                      class="btn btn-primary my-1 thaifont"
+                      href="https://www.eqd.cmu.ac.th/Curr/rule_cmu.html"
+                    >
+                      www.eqd.cmu.ac.th/Curr/rule_cmu</a
+                    >
+                  </li>
+                  <li>
+                    <p class="thaifont">แนวปฏิบัติ การลาพักการศึกษา</p>
+                    <a
+                      class="btn btn-primary my-1 thaifont"
+                      href="https://www.reg.cmu.ac.th/webreg/reg-files/reg-absent.pdf"
+                    >
+                      www.reg.cmu.ac.th/webreg/reg-files/reg-absent</a
+                    >
+                  </li>
+                  <li>
+                    <p class="thaifont">
+                      แนวปฏิบัติ การลาออกจากการเป็นนักศึกษา
+                    </p>
+                    <a
+                      class="btn btn-primary my-1 thaifont"
+                      href="https://www.reg.cmu.ac.th/webreg/reg-files/reg-resign.pdf"
+                    >
+                      www.reg.cmu.ac.th/webreg/reg-files/reg-resign</a
+                    >
+                  </li>
+                  <li>
+                    <p class="thaifont">
+                      แนวปฏิบัติ การถอนกระบวนวิชา (โดยได้รับอักษรลำดับขั้น W)
+                    </p>
+                    <a
+                      class="btn btn-primary my-1 thaifont"
+                      href="https://www1.reg.cmu.ac.th/registrationoffice/filesdownload/W-GuidelinesStudent.pdf"
+                    >
+                      www1.reg.cmu.ac.th/registrationoffice/filesdownload</a
+                    >
+                  </li>
+                  <li>
+                    <p class="thaifont">
+                      แนวปฏิบัติ การขอเข้าร่วมศึกษากระบวนวิชา
+                      (โดยได้รับอักษรลำดับขั้น V)
+                    </p>
+                    <a
+                      class="btn btn-primary my-1 thaifont"
+                      href="https://www.reg.cmu.ac.th/webreg/reg-files/reg-visiting.pdf"
+                    >
+                      www.reg.cmu.ac.th/webreg/reg-files/reg-visiting.pdf</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-content" data-aos="fade-up">
+            <h2 class="header-text mt-3 thaifont">คู่มือนักศึกษา</h2>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-6 mb-4 center-ver">
+                <img
+                  class="responesive-img center-div"
+                  src="./img/4.jpg"
+                  alt="รายงานตัว"
+                />
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <p class="thaifont indent-text">
+                  คู่มือการขอรับบริการ เป็นอีกหนึ่งคู่มือที่ดีสำหรับนักศึกษาใหม่
+                  ซึ่งเนื้อหาในคู่มือนั้น มีการอธิบาย
+                  และให้ความรู้ด้านการติดต่อขอรับบริการต่างๆ
+                  ของสำนักทะเบียนและประมวล มหาวิทยาลัยเชียงใหม่
+                  ซึ่งนักศึกษาสามารถใช้บริการได้ตั้งแต่แรกเข้า
+                  จนกระทั่งสำเร็จการศึกษา ทั้งนี้นักศึกษาสามารถเข้าดูรายละเอียด
+                  ได้ที่
+                </p>
+                <a
+                  href="https://www.reg.cmu.ac.th/webreg/th/undergraduate/"
+                  class="btn btn-primary"
+                  >www.reg.cmu.ac.th/webreg/th/undergraduate/</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="box-content" data-aos="fade-up">
+            <h2 class="header-text mt-3 thaifont">ปฏิทินการศึกษา</h2>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-6 mb-4 center-ver">
+                <img
+                  class="responesive-img center-div"
+                  src="./img/5.jpg"
+                  alt="รายงานตัว"
+                />
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <p class="thaifont indent-text">
+                  ยกเลิกประกาศมหาวิทยาลัยเชียงใหม่ เรื่อง ปฏิทินการศึกษา
+                  ประจําปีการศึกษา 2564 ลงวันที่ 23 พฤศจิกายน 2563
+                  และเพื่อให้การบริหารงานด้านวิชาการดําเนินไปด้วยความเรียบรอย
+                  มีประสิทธิภาพและสอดคล้องกับข้อบังคับฯ
+                  ว่าด้วยการศึกษาของมหาวิทยาลัยและประกาศอื่น ๆ ที่เกี่ยวข้อง
+                  สําหรับนักศึกษาทุกระดับการศึกษา จึงให้จัดปฏิทิน
+                  การศึกษามหาวิทยาลัยเชียงใหม่ ประจําปีการศึกษา 2564 (ฉบับที่ ๒)
+                  ไว้ดังต่อไปนี้
+                </p>
+                <a
+                  href="https://www.reg.cmu.ac.th/webreg/reg-files/64/reg-calendar64-TH.pdf"
+                  class="btn btn-primary"
+                  >More Infomation</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="box-content" data-aos="fade-up">
+            <h2 class="header-text mt-3 thaifont">ระบบงานทะเบียนการศึกษา</h2>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-6 mb-4 center-ver">
+                <img
+                  class="responesive-img center-div"
+                  src="./img/5.jpg"
+                  alt="รายงานตัว"
+                />
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <p class="thaifont indent-text">
+                  นักศึกษาใหม่ชั้นปีที่ 1 ควรจะต้องทราบ ระบบงานทะเบียนการศึกษา
+                  ซึ่งมีความสำคัญในการใช้บริการด้านต่างๆ เกี่ยวกับการศึกษา
+                  โดยที่ระบบงานทะเบียนการศึกษาให้บริการดังนี้
+                </p>
+                <ul class="thaifont">
+                  <li>ระบบลงทะเบียน เพิ่ม-ถอน กระบวนวิชา</li>
+                  <li>ระบบลงทะเบียนเพื่อใช้บริการมหาวิทยาลัย</li>
+                  <li>ค้นหากระบวนวิชาที่เปิดสอน สรุปผลการลงทะเบียน</li>
+                  <li>ข้อมูลส่วนบุคคล ดูผลการศึกษา(ดูเกรด)</li>
+                  <li>ระบบลาพักการศึกษา ระบบลาออกจากการเป็นนักศึกษา</li>
+                  <li>ระบบขอถอนกระบวนวิชาโดยได้รับอักษรลำดับขั้น W</li>
+                  <li>
+                    ระบบขอเข้าร่วมศึกษากระบวนวิชาโดยได้รับอักษรลำดับขั้น V
+                  </li>
+                  <li>ระบบขอวัดและประเมินผลโดยได้รับอักษรลำดับขั้น I</li>
+                  <li>พิมพ์ใบแจ้งผลการลงทะเบียน(มชท.50)</li>
+                  <li>พิมพ์ใบเสร็จรับเงิน กรณีชำระเงินผ่าน QR code</li>
+                  <li>พิมพ์ใบเสร็จรับเงิน กรณีชำระเงินผ่าน QR code</li>
+                </ul>
+                <hr style="width: 100%" />
+                <p class="thaifont">
+                  นักศึกษาสามารถศึกษารายละเอียดเพิ่มเติมได้ที่
+                </p>
+                <a
+                  href="https://www.reg.cmu.ac.th/webreg/th/undergraduate/"
+                  class="btn btn-primary"
+                  >More Infomation</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="box-content" data-aos="fade-up">
+            <h2 class="header-text mt-3 thaifont">
+              แนะนำระบบสารสนเทศการศึกษา คณะเกษตรศาสตร์
+            </h2>
+
+            <div class="row">
+              <div class="col-12 center- mb-4">
+                <img
+                  class="responesive-img-full center-div"
+                  src="./img/20836_0.jpg"
+                  alt="รายงานตัว"
+                />
+              </div>
+              <div class="col-12">
+                <p class="thaifont indent-text">
+                  คณะเกษตรศาสตร์ มหาวิทยาลัยเชียงใหม่
+                  มีความพร้อมทางด้านระบบสารสนเทศทางการศึกษา
+                  ในการให้บริการการศึกษาในด้านต่างๆ
+                  ทั้งส่วนของการบริการการศึกษาและการพัฒนาคุณภาพนักศึกษา
+                   นักศึกษาใหม่ชั้นปีที่ 1 ควรจะต้องทราบ ระบบสารสนเทศทางการศึกษา
+                  ซึ่งมีความสำคัญในการใช้บริการด้านต่างๆ เกี่ยวกับการศึกษา
+                  เพียงแค่ใช้ CMU IT ACCOUNT
+                  ที่นักศึกษาได้รับจากวันที่รายงานตัวขึ้นทะเบียนนักศึกษาใหม่
+                  จากสำนักบริการเทคโนโลยีสารสนเทศ ซึ่งเน้นการใช้ 1 บัญชี
+                  ใช้งานได้ทุกบริการ (One account for all services)
+                  นักศึกษาสามารถอ่านคู่มือวิธีการใช้งานการเข้าระบบด้วย CMU IT
+                  ACCOUNT คณะเกษตรศาสตร์ ได้ตามลิ้งที่ปรากฏนี้
+                </p>
+                <a
+                  href="https://www.agri.cmu.ac.th/2017/webs/info_detail/20836"
+                  class="btn btn-primary thaifont"
+                  >ขั้นตอนการใช้งาน CMU IT ACCOUNT</a
+                >
+                <p class="thaifont">
+                  โดยที่ระบบสารสนเทศทางการศึกษา คณะเกษตรศาสตร์
+                  มหาวิทยาลัยเชียงใหม่ ให้บริการดังนี้
+                </p>
+                <ul class="thaifont">
+                  <li>ดูข้อมูลส่วนบุคคล</li>
+                  <li>
+                    รับข่าวสารการแจ้งเตือนสำคัญจากคณะ ผ่าน CMU E-mail นักศึกษา
+                  </li>
+                  <li>
+                    เช็คผลการศึกษาและกระบวนวิชาตามแผนโครงสร้างหลักสูตร มชท.92
+                  </li>
+                  <li>ระบบลงทะเบียนอบรม/กิจกรรมทางวิชาการด้านการศึกษา</li>
+                  <li>ระบบขอหนังสือรับรองและคำขอทั่วไป (มช.19)</li>
+                  <li>การฝึกงาน 1 กระบวนวิชา 400190 (สำหรับนศ. ชั่นปีที่ 1)</li>
+                  <li>การฝึกงาน 2 (กระบวนวิชา 400290)</li>
+                  <li>ระบบการเลือกยื่นเข้าสังกัดสาขาวิชาเอก</li>
+                  <li>ระบบลงทะเบียนรับเกียรติบัตรรางวัลเรียนดี</li>
+                  <li>
+                    ระบบรายงานตัวคาดว่าจะสำเร็จการศึกษา คณะเกษตรศาสตร์ (มชท.92)
+                  </li>
+                  <li>
+                    โครงการทุนจ้างงานเพื่อช่วยเหลือบรรเทาฯ
+                    นักศึกษาคณะเกษตรศาสตร์
+                  </li>
+                  <hr style="width: 100%" />
+                  <p class="thaifont">
+                    นักศึกษาสามารถเข้าใช้งานระบบคณะเกษตรศาสตร์
+                    และศึกษารายละเอียดเพิ่มเติมได้ที่
+                  </p>
+                  <a
+                    href="https://oauth.cmu.ac.th/v1/Login.aspx?continue=agri%20SMART%20STUDENT"
+                    class="btn btn-primary"
+                    >Student Login</a
+                  >
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-content" data-aos="fade-up">
+            <h2 class="header-text mt-3 thaifont">
+              แผนผังคณะเกษตรศาสตร์ มหาวิทยาลัยเชียงใหม่
+            </h2>
+
+            <div class="row">
+              <div class="col-sm-12 mb-4 center-ver">
+                <img
+                  class="responesive-img-full center-div"
+                  src="./img/map.jpg"
+                  alt="รายงานตัว"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TODO : STUDENT DEVELOPMENT -->
+      <div class="container my-5">
+        <h4 class="subHeader-text">พัฒนาคุณภาพนักศึกษา</h4>
+        <h2 class="header-text">STUDENT DEVELOPMENT</h2>
+      </div>
+
+      <script src="main.js"></script>
+    </main>
+    <script src="https://tympanus.net/codrops/adpacks/cda.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- TODO : SMART EDUCATION TEAM -->
     <!-- TODO : CONTACT US -->
     <!-- TODO : FOOTTER -->
-</body>
-
+  </body>
 </html>
