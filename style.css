@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap");
+
 /* navbar */
 
 html {
@@ -9,6 +12,8 @@ body {
   font-family: "Lexend Exa", sans-serif;
 }
 nav {
+  font-family: "Lexend Exa", sans-serif;
+
   position: fixed;
   top: 15px;
   left: 50%;
@@ -166,7 +171,7 @@ nav:hover {
 
 .heading-primary-main {
   display: block;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 400;
   letter-spacing: 5px;
 }
@@ -244,6 +249,8 @@ nav:hover {
 .header-text {
   text-align: center;
   margin-bottom: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
 }
 .subHeader-text {
   text-align: center;
@@ -251,14 +258,20 @@ nav:hover {
   font-family: "Noto Sans Thai", sans-serif;
 }
 .box-info {
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  background: #fff;
-  -webkit-box-shadow: 8px 8px 18px #b2b8c9, -12px -12px 24px #f0f8ff;
-  box-shadow: 8px 8px 18x #b2b8c9, -12px -12px 24px #f0f8ff;
-  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: 15px;
+  width: 200px;
   height: 200px;
   font-family: "Noto Sans Thai", sans-serif;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+}
+.box-info:hover {
+  box-shadow: rgba(152, 46, 170, 0.4) 5px 5px, rgba(152, 46, 170, 0.3) 10px 10px,
+    rgba(152, 46, 170, 0.2) 15px 15px, rgba(162, 46, 240, 0.1) 20px 20px,
+    rgba(152, 46, 170, 0.05) 25px 25px;
 }
 .box-info-text {
   text-align: center;
@@ -270,16 +283,23 @@ nav:hover {
   /* right: auto;
   left: auto; */
 }
-@media only screen and (max-width: 900px) {
-  .box-info {
-    width: 270px;
-    height: 150px;
-  }
-  .box-info-text {
-    width: 270px;
-    height: 150px;
-  }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  align-items: center;
 }
+.wrapper span {
+  font-size: 16px;
+  font-weight: 600;
+}
+.icon {
+  width: 100px;
+  /* max-width: 200px; */
+  height: 100px;
+  margin-bottom: 18px;
+}
+
 .desc {
   text-align: center;
   font-family: "Noto Sans Thai", sans-serif;
@@ -379,6 +399,7 @@ nav:hover {
 .button--mimas span {
   position: relative;
   mix-blend-mode: difference;
+  font-weight: bold;
 }
 
 .button--mimas::before {
