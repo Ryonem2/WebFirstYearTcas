@@ -16,10 +16,12 @@ for (let i = 0; i < eduList.length; i++) {
 
 const boxInfo = document.querySelectorAll(".box-info2");
 const modal = document.querySelectorAll(".modal-bg");
+const body = document.getElementsByTagName("body")[0];
 
 for (let i = 0; i < boxInfo.length; i++) {
   boxInfo[i].addEventListener("click", () => {
     modal[i].style.display = "block";
+    body.classList.add("disable-scroll");
     for (let j = 0; j < boxInfo.length; j++) {
       if (j == i) {
         continue;
@@ -30,12 +32,25 @@ for (let i = 0; i < boxInfo.length; i++) {
   });
 }
 
-const close = document.querySelectorAll(".closed");
+const close = document.querySelectorAll(".close-btn");
 
 for (let i = 0; i < close.length; i++) {
   close[i].addEventListener("click", () => {
+    body.classList.remove("disable-scroll");
     for (let j = 0; j < close.length; j++) {
       modal[j].style.display = "none";
     }
   });
+}
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
 }

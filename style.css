@@ -11,6 +11,7 @@ body {
   background: #f9f8fd;
   font-family: "Lexend Exa", sans-serif;
 }
+
 nav {
   font-family: "Lexend Exa", sans-serif;
 
@@ -111,12 +112,80 @@ nav:hover {
   }
 }
 
+.active-navbar {
+  position: relative;
+  position: absolute;
+  position: fixed;
+  z-index: 999;
+
+  right: 0;
+  margin: 2vh 2vw 0 0;
+  display: none;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 900px) {
   nav {
     display: none;
   }
+  .active-navbar {
+    display: block;
+  }
 }
 
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
 /* end navbar  */
 
 /* header */
@@ -213,6 +282,10 @@ nav:hover {
 /* end header */
 
 /* content */
+.disable-scroll {
+  overflow: hidden;
+}
+
 .svg-container > svg {
   position: relative;
   max-width: 100%;
@@ -404,10 +477,14 @@ nav:hover {
   flex-direction: column;
   margin: 10px auto;
   align-items: center;
+  justify-content: center;
 }
 .wrapper span {
   font-size: 16px;
   font-weight: 600;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
 }
 .icon {
   width: 100px;
@@ -581,7 +658,7 @@ th {
 }
 @media only screen and (max-width: 850px) {
   .edu-selecte-ul {
-    display: none;
+    flex-direction: column;
   }
 }
 .box-content:first-child {
@@ -627,7 +704,128 @@ th {
 }
 .wrapper-icon {
   display: flex;
-  margin: 0 auto;
   justify-content: center;
   align-items: center;
+}
+.wrapper2 {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper2 .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 9px;
+  margin: 18px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@media screen and (max-width: 500px) {
+  .wrapper2 .icon {
+    margin: 7px;
+  }
+}
+
+.wrapper2 .tooltip {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper2 .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper2 .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper2 .icon:hover span,
+.wrapper2 .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper2 .facebook:hover,
+.wrapper2 .facebook:hover .tooltip,
+.wrapper2 .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+.wrapper2 .twitter:hover,
+.wrapper2 .twitter:hover .tooltip,
+.wrapper2 .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+
+.wrapper2 .line:hover,
+.wrapper2 .line:hover .tooltip,
+.wrapper2 .line:hover .tooltip::before {
+  background-color: #3ace01;
+  color: #ffffff;
+}
+
+.wrapper2 .map:hover,
+.wrapper2 .map:hover .tooltip,
+.wrapper2 .map:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.wrapper2 .phone:hover,
+.wrapper2 .phone:hover .tooltip,
+.wrapper2 .phone:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
+.footer {
+  background-color: #002233;
+}
+
+.footer-content h4 {
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 80%);
+  font-family: "IBM Plex Sans Thai", sans-serif;
+}
+.footer-content p {
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 60%);
+  margin-bottom: 0;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+}
+.img-content-footer {
+  width: 100%;
+  max-width: 370px;
+  height: auto;
 }
