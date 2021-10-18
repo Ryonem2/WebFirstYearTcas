@@ -225,6 +225,105 @@ nav:hover {
 .thaifont {
   font-family: "Noto Sans Thai", sans-serif;
 }
+.modal-bg {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+
+  position: absolute;
+  position: fixed;
+  display: flex;
+  margin: 0 auto;
+  /* justify-content: center;
+  align-items: center; */
+
+  display: none;
+  /* padding: 10vh 10vw; */
+}
+.close-btn {
+  width: 60px;
+  height: 60px;
+
+  position: absolute;
+  z-index: 1002;
+
+  top: 12vh;
+  right: 11.7vw;
+  background-color: #e0e0e0;
+
+  border-radius: 999px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.closed {
+  font-size: 36px;
+  font-weight: bold;
+
+  position: relative;
+  bottom: 4px;
+
+  color: #777;
+}
+
+.close-btn:hover {
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+.modal-content-self {
+  width: 80vw;
+  height: 80vh;
+
+  top: 10vh;
+  right: 10vw;
+
+  position: absolute;
+  z-index: 1001;
+
+  background-color: #e0e0e0;
+
+  padding: 20px 10vw;
+  overflow: auto;
+
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.modal-content-self h2 {
+  color: #000;
+  font-size: 36px;
+  text-align: center;
+  font-family: "Noto Sans Thai", sans-serif;
+  font-weight: bolder;
+}
+.modal-content-self img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+
+  display: flex;
+  margin: 0 auto;
+}
+.modal-content-self button > a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+.modal-content-self button {
+  display: flex;
+  margin: 0 auto;
+}
+
 .responesive-img {
   width: 100%;
   max-width: 400px;
@@ -269,6 +368,23 @@ nav:hover {
   cursor: pointer;
 }
 .box-info:hover {
+  box-shadow: rgba(152, 46, 170, 0.4) 5px 5px, rgba(152, 46, 170, 0.3) 10px 10px,
+    rgba(152, 46, 170, 0.2) 15px 15px, rgba(162, 46, 240, 0.1) 20px 20px,
+    rgba(152, 46, 170, 0.05) 25px 25px;
+}
+
+.box-info2 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
+  font-family: "Noto Sans Thai", sans-serif;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+}
+.box-info2:hover {
   box-shadow: rgba(152, 46, 170, 0.4) 5px 5px, rgba(152, 46, 170, 0.3) 10px 10px,
     rgba(152, 46, 170, 0.2) 15px 15px, rgba(162, 46, 240, 0.1) 20px 20px,
     rgba(152, 46, 170, 0.05) 25px 25px;
@@ -477,4 +593,41 @@ th {
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   padding: 40px 30px;
   display: none;
+}
+.Provice-2-cmu {
+  max-width: 1300px;
+  width: 100%;
+  height: auto;
+
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.box-content2 {
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 40px 30px;
+}
+.box-content2 h3 {
+  text-align: center;
+}
+.box-content2 p {
+  text-align: center;
+}
+.tem-img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+
+  border-radius: 15px;
+  margin: 15px 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 6px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.wrapper-icon {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
