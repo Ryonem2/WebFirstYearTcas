@@ -674,13 +674,46 @@ th {
   color: #000;
   text-decoration: underline;
 }
-@media only screen and (max-width: 850px) {
+.edu-selecte-ul-phone {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Noto Sans Thai", sans-serif;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+}
+.edu-selecte-ul-phone li {
+  padding: 0 10px;
+  cursor: pointer;
+  color: #757575;
+  transition: color 0.3s ease-in-out;
+}
+.edu-selecte-ul-phone li:hover {
+  color: #000;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 850px) {
   .edu-selecte-ul {
-    flex-direction: column;
+    display: flex;
+  }
+  .edu-selecte-ul-phone {
+    display: none;
+  }
+  .box-content:first-child {
+    display: block;
   }
 }
-.box-content:first-child {
-  display: block;
+@media only screen and (max-width: 850px) {
+  .edu-selecte-ul {
+    display: none;
+  }
+  .edu-selecte-ul-phone {
+    display: flex;
+  }
+  .box-content:nth-child(9) {
+    display: block;
+  }
 }
 .box-content {
   border-radius: 30px;

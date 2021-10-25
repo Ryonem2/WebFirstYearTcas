@@ -1,8 +1,10 @@
 const eduList = document.querySelectorAll(".edu-se-li");
+// const eduList2 = document.querySelectorAll(".edu-se-li-phone");
 const boxContent = document.querySelectorAll(".box-content");
 
 for (let i = 0; i < eduList.length; i++) {
   eduList[i].addEventListener("click", () => {
+    console.log(eduList[i], i);
     boxContent[i].style.display = "block";
     for (let j = 0; j < eduList.length; j++) {
       if (j == i) {
